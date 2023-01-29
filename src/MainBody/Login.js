@@ -7,6 +7,7 @@ import instoryLogo from '../img/instory.jpg';
 import {db, auth} from '../firebase/firebase';
 import { useDispatch, useSelector} from 'react-redux';
 import {login} from '../redux/user';
+import book_img from '../bookimg/books.png'
 
 const LoginContainer = styled.div`
     > div {
@@ -106,7 +107,7 @@ function Login() {
     return(
         <LoginContainer>
             <div>
-                <img src="https://i1.wp.com/freepngimages.com/wp-content/uploads/2019/06/scattered-books.png?fit=895%2C895"/>
+                <img src={book_img}/>
             </div>
             <Paper id="logpage" elevation={3}>
                 <form>
